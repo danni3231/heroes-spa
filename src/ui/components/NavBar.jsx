@@ -14,6 +14,17 @@ export const Navbar = () => {
 								? 'nav-item nav-link active'
 								: 'nav-item nav-link'
 						}
+						to='/search'
+					>
+						Search
+					</NavLink>
+
+					<NavLink
+						className={({ isActive }) =>
+							isActive
+								? 'nav-item nav-link active'
+								: 'nav-item nav-link'
+						}
 						to='/marvel'
 					>
 						Marvel
@@ -34,14 +45,10 @@ export const Navbar = () => {
 
 			<div className='navbar-collapse collapse w-100 order-3 dual-collapse2 d-flex justify-content-end'>
 				<ul className='navbar-nav ml-auto'>
-					<span className='nav-item nav-link text-info'>
-                        Daniel
-                    </span>
-                    <button
-                        className='nav-item nav-link btn btn-primary'
-                    >
-                        Logout
-                    </button>
+					<span className='nav-item nav-link text-info'>Daniel</span>
+					<button className='nav-item nav-link btn btn-primary'>
+						Logout
+					</button>
 				</ul>
 			</div>
 		</nav>
