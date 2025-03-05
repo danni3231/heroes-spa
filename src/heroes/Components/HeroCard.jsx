@@ -39,7 +39,7 @@ export const HeroCard = ({
                                 </small>
                             </p>
 
-                            <Link to={`./hero/${id}`}>Más...</Link>
+                            <Link to={`/hero/${id}`}>Más...</Link>
 							
 						</div>
 					</div>
