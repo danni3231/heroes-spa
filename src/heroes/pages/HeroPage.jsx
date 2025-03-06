@@ -22,13 +22,13 @@ export const HeroPage = () => {
 		<div className='row mt-5'>
 			<div className='col-4'>
 				<img
-					className='img-thumbnail'
+					className='img-thumbnail animate__animated animate__fadeInLeft'
 					src={`/assets/heroes/${id}.jpg`}
 					alt={hero.superhero}
 				/>
 			</div>
 
-            <div className="col-8">
+            <div className="col-8 animate__animated animate__fadeInRight">
                 <h1>{hero.superhero}</h1>
                 <ul className='list-group list-group-flush'>
                     <li className='list-group-item'> <b>Alter ego:</b> {hero.alter_ego} </li>
